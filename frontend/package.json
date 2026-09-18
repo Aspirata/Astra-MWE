@@ -1,0 +1,23 @@
+{
+  "name": "astra-mwe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "node --experimental-strip-types --test src/*.test.ts",
+    "format": "prettier --write src index.html vite.config.ts tsconfig.json package.json",
+    "format:check": "prettier --check src index.html vite.config.ts tsconfig.json package.json"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.4.1",
+    "@types/three": "0.185.4",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "vite": "8.2.2"
+  }
+}
