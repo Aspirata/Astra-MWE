@@ -4,7 +4,9 @@
 
 **Minecraft World Exporter · v0.1.0 · [Русский](README.md) · MIT**
 
-Astra MWE exports selected Minecraft Java 1.13+ world regions to GLB for Blender. Version 0.1.0 is ready for practical experimentation, but it may still have incomplete mod support, rendering differences and performance limitations. Compatibility with every version or resource pack is not guaranteed.
+**Astra MWE is not a production-ready exporter; it is a proof of concept.** The project explores exporting Minecraft Java 1.13+ worlds to GLB as an alternative to OBJ- and USD-based workflows. Version 0.1.0 is intended for practical experimentation and may still have incomplete mod support, rendering differences and performance limitations. Compatibility with every version or resource pack is not guaranteed.
+
+The program was created entirely with ChatGPT using **GPT-6 Astra** at **high** reasoning effort.
 
 Go core, Wails desktop shell, Three.js/WebGL2 preview. Worlds are read only. Minecraft files and skins are not distributed with the application.
 
