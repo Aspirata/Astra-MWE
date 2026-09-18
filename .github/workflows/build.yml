@@ -49,8 +49,8 @@ jobs:
           npm test
       - name: Build Windows
         if: matrix.os == 'windows'
-        shell: pwsh
-        run: ./scripts/build.ps1 -Architecture ${{ matrix.arch }}
+        shell: cmd
+        run: scripts\build.cmd ${{ matrix.arch }}
       - name: Build Linux
         if: matrix.os == 'linux'
         run: bash scripts/build-linux.sh ${{ matrix.arch }}

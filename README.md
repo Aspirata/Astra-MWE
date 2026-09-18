@@ -63,11 +63,11 @@
 
 Нужны Go 1.25+, Node.js 24 и npm. Зависимости закреплены в `go.mod` и `frontend/package-lock.json`.
 
-Windows PowerShell:
+Windows (можно запустить `scripts\build.cmd` двойным кликом и выбрать архитектуру):
 
-```powershell
-./scripts/build.ps1 -Architecture amd64
-./scripts/build.ps1 -Architecture arm64
+```bat
+scripts\build.cmd amd64
+scripts\build.cmd arm64
 ```
 
 Linux (например Ubuntu 24.04; собирать на соответствующей архитектуре):

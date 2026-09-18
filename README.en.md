@@ -55,7 +55,7 @@ See [verification notes](docs/verification.md) for measured conditions and [rele
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the source map, ownership contracts and formatting rules (Russian).
 
-Requires Go 1.25+, Node.js 24 and npm. Run `./scripts/build.ps1 -Architecture amd64` in Windows PowerShell, or `bash scripts/build-linux.sh amd64` on Linux. Use `arm64` on matching Linux ARM64 hardware; Windows ARM64 can be cross-built. Linux needs `build-essential pkg-config libgtk-3-dev libwebkit2gtk-4.1-dev`.
+Requires Go 1.25+, Node.js 24 and npm. Double-click `scripts\build.cmd` to choose a Windows target, or run `scripts\build.cmd amd64` from a console. Use `arm64` for Windows ARM64. On Linux run `bash scripts/build-linux.sh amd64`; ARM64 requires matching Linux ARM64 hardware. Linux needs `build-essential pkg-config libgtk-3-dev libwebkit2gtk-4.1-dev`.
 
 Scripts generate Windows resources and PNG/ICO icons from the supplied artwork before building. Outputs are in `build/bin/`. Test with `go test ./...`, `go vet ./...`, and `npm test` / `npm run build` in `frontend/`. CLI operates without WebView or GPU; use `-help` for arguments.
 
